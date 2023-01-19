@@ -102,7 +102,7 @@ nav a:hover, header section a:hover {
 /* Home */
 #home {
     height: 100vh;
-    background-image: linear-gradient( to top, rgba(1, 1, 1, 1) 10%, rgba(1, 1, 1, 0) 50%), url(/images/header-bg.jpeg);
+    background: linear-gradient( to top, rgba(1, 1, 1, 1) 10%, rgba(1, 1, 1, 0) 50%), url(/images/header-bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
