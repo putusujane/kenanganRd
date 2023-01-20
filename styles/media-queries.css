@@ -20,6 +20,23 @@
 /* Jika layar maksimal 1000px */
 @media screen and (max-width: 1000px) {
 
+    /* Ripple */
+    .rplG {
+        left: 25em;
+    }
+
+    .rplH {
+        left: 20em;
+    }
+
+    .rplD {
+        left: 25em;
+    }
+
+    .rplF {
+        left: 20em;
+    }
+
     /* Header */
     header {
         justify-content: space-between;
@@ -126,6 +143,14 @@
 }
 
 @media screen and (max-width: 650px) {
+    /* Ripple */
+    .rplD {
+        left: 15em;
+    }
+
+    .rplE {
+        left: 25em;
+    }
 
     header #link-title {
         font-size: medium;
@@ -175,6 +200,19 @@
 }
 
 @media screen and (max-width: 470px) {
+
+    /* Ripple */
+    .rplE {
+        left: 15em;
+    }
+
+    .rplG {
+        left: 12em;
+    }
+
+    .rplC {
+        left: 14em;
+    }
 
     header #link-title {
         font-size: 12px;
