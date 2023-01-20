@@ -111,6 +111,10 @@
     #btn-kirim-ctk {
         width: 100%;
     }
+
+    #about, #contact, #support {
+        margin: 0 50px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -155,5 +159,59 @@
 
     #about p, #menu p, #contact p, #support p {
         font-size: large;
+    }
+
+    #about, #contact, #support {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    header #link-title {
+        font-size: 12px;
+    }
+
+    .gbngn .search-cart svg {
+        width: 20px;
+    }
+
+    #home h2 {
+        font-size: 2.5em;
+    }
+
+    #home p {
+        font-size: small;
+    }
+
+    #about h2, #menu h2, #contact h2, #support h2 {
+        font-size: 1.5em;
+    }
+
+    #about p, #menu p, #contact p, #support p {
+        font-size: medium;
+        text-align: left;
+    }
+
+    .socialMedia {
+        margin-top: 20px;
+    }
+
+    .dibuat-dengan {
+        vertical-align: middle;
+        margin-top: 10px;
+    }
+
+    .dibuat-dengan img {
+        width: 25px;
+    }
+
+    .dibuat-dengan img:last-child {
+        width: 22px;
+        height: 23px;
+    }
+
+    .copyright p {
+        font-size: smaller;
     }
 }
