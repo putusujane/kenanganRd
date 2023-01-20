@@ -38,7 +38,7 @@
     }
 
     #mobile-nav {
-        animation: slideKiri 0.2s;
+        animation: slideKiri 0.2s linear;
         width: 15rem;
         height: 100%;
     }
