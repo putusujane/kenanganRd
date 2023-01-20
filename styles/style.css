@@ -10,7 +10,7 @@
     border: none;
     text-decoration: none;
     scroll-behavior: smooth;
-    scroll-padding: 50px;
+    scroll-margin: -7em;
 }
 
 /* Root */
@@ -151,7 +151,7 @@ nav a:hover, header section a:hover, .hm:hover {
 }
 
 /* Transition */
-#link-title, nav, nav a, #mobile-nav, #mobile-nav a, header section a, #home a, form input, footer, .socialMedia a, .footer-nav a, .copyright a {
+#link-title, nav, nav a, #mobile-nav, #mobile-nav a, header section a, #home a, #support img, form input, footer, .socialMedia a, .footer-nav a, .copyright a {
     transition: 0.3s;
 }
 
@@ -305,6 +305,11 @@ main {
     margin-bottom: 20px;
 }
 
+/* Google Maps */
+iframe {
+    filter: grayscale(90%) invert(100%) contrast(90%);
+}
+
 .map-form {
     display: flex;
     align-items: center;
@@ -357,6 +362,11 @@ form input {
 /* Support Us */
 #support img{
     margin-top: 20px;
+    opacity: 50%;
+}
+
+#support img:hover {
+    opacity: 70%;
 }
 
 footer {
