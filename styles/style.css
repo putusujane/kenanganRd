@@ -24,6 +24,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: whitesmoke;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -36,6 +37,7 @@ header {
     font-size: large;
 
     padding: 15px 0;
+    overflow: hidden;
 
     position: sticky;
     top: 0;
@@ -75,9 +77,9 @@ nav {
     flex-direction: row;
 }
 nav a{
-    margin-left: 40px;
+    margin-left: 35px;
     text-align: center;
-    line-height: 1.2em;
+    line-height: 1.1em;
 }
 
 nav a:hover, header section a:hover {
@@ -86,16 +88,70 @@ nav a:hover, header section a:hover {
 
 /* Search and Cart */
 header section a:first-child {
-    margin-right: 20px;
+    margin-right: 18px;
 }
 
-/* Navigation and search-cart hover */
-nav a:hover, header section a:hover {
+/* Color Hover */
+nav a:hover, header section a:hover, .hm:hover {
     color: #c4894d;
 }
 
+/* Hamburger Open */
+.hm:hover {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Hamburger Close */
+#hamburgerClose {
+    display: none;
+}
+
+.hm:active {
+    color: whitesmoke;
+}
+
+/* Mobile Navigation */
+#mobile-nav {
+    display: none;
+    position: fixed;
+    right: 0;
+    width: 15rem;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(196, 137, 77, 0.9), rgba(1, 1, 1, 0.9));
+    z-index: 999;
+    transition: 1s linear;
+}
+
+#mobile-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+#mobile-nav a::after {
+    content: "";
+    display: block;
+    width: 80%;
+    margin: 10px 0 20px 0;
+    border-bottom: 1px solid whitesmoke;
+    animation: garisBawah 0.3s normal;
+}
+
+#mobile-nav a:first-child {
+    margin-top: 50%;
+}
+
+#mobile-nav a:hover {
+    color: #222;
+    scale: 1.1;
+}
+
 /* Transition */
-#link-title, nav a, header section a, #home a, form input, footer, .socialMedia a, .footer-nav a, .copyright a {
+#link-title, nav, nav a, #mobile-nav, #mobile-nav a, header section a, #home a, form input, footer, .socialMedia a, .footer-nav a, .copyright a {
     transition: 0.3s;
 }
 
@@ -103,10 +159,11 @@ nav a:hover, header section a:hover {
 #home {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(1, 1, 1, 1)),
-                  url("../../kopi-kenanganRd/images/header-bg.jpeg");
+                  url("../../kenanganRd/images/header-bg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: bottom;
+    background-position: center;
+    background-origin: content-box;
 }
 
 #home h2 {
@@ -159,8 +216,8 @@ main {
 }
 
 #about h2, #menu h2, #contact h2, #support h2 {
-    margin-top: 100px;
-    margin-bottom: 30px;
+    margin-top: 15rem;
+    margin-bottom: 50px;
     font-size: xxx-large;
 }
 
@@ -196,12 +253,13 @@ main {
 }
 
 #menu p {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #menu section {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     align-self: center;
@@ -297,8 +355,8 @@ footer {
     align-items: center;
     gap: 10px;
     
-    margin-top: 100px;
-    padding: 20px 0;
+    margin-top: 15rem;
+    padding: 15px 0;
     background: linear-gradient(to bottom, rgba(211, 107, 0, 0.5), rgba(34, 34, 34, 0.2));
 
     border-top-left-radius: 50% 100%;
@@ -309,7 +367,8 @@ footer:hover {
     border-radius: unset;
 }
 
-.socialMedia a, .footer-nav a {
+.socialMedia a, .footer-nav a, .copyright {
+    font-size: small;
     margin: 0 10px;
     color: whitesmoke;
 }
@@ -333,11 +392,11 @@ footer:hover {
 .gh:hover{color: #171515;}
 
 .footer-nav a:hover, .copyright a:hover {
-    color: var(--bg);
+    opacity: 0.4;
 }
 
 .dibuat-dengan img {
-    width: 35px;
+    width: 30px;
 }
 
 .copyright a {

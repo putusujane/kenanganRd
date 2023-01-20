@@ -19,11 +19,14 @@
         <!-- Tag Judul Jendela Browser -->
         <title>KenanganRd.</title>
 
-        <!-- File Eksternal CSS -->
+        <!-- Main CSS -->
         <link rel="stylesheet" href="styles/style.css">
 
-        <!-- File Eksternal CSS Ripple -->
+        <!-- CSS Ripple -->
         <link rel="stylesheet" href="styles/ripple.css">
+
+        <!-- CSS Media Queries -->
+        <link rel="stylesheet" href="styles/media-queries.css">
 
         <!-- File Eksternal JavaScript Ikon Feather -->
         <script src="https://unpkg.com/feather-icons"></script>
@@ -39,17 +42,38 @@
                 <a href="/"><i data-feather="home"></i><br>Beranda</a>
                 <a href="#about"><i data-feather="info"></i><br>Tentang</a>
                 <a href="#menu"><i data-feather="coffee"></i><br>Menu</a>
-                <a href="#contact"><i data-feather="mail"></i><br>Kontak</a>
+                <a href="#contact"><i data-feather="send"></i><br>Kontak</a>
                 <a href="#support"><i data-feather="dollar-sign"></i><br>Dukung</a>
             </nav>
 
-            <!-- Pencarian dan Keranjang -->
-            <section>
-                <a href="#search"><i data-feather="search"></i></a>
+            <section class="gbngn">
+                <!-- Pencarian dan Keranjang -->
+                <section class="search-cart">
+                    <a href="#search"><i data-feather="search"></i></a>
 
-                <a href="#cart"><i data-feather="shopping-cart"></i></a>
+                    <a href="#cart"><i data-feather="shopping-cart"></i></a>
+                </section>
+
+                <!-- Hamburger -->
+                <section class="hamburger">
+                    <section id="hamburgerOpen" class="hm" onclick="hamburgerOpen();">
+                        <i data-feather="menu"></i>
+                    </section>
+
+                    <section id="hamburgerClose" class="hm" onclick="hamburgerClose();">
+                        <i data-feather="x-circle"></i>
+                    </section>
+                </section>
             </section>
         </header>
+
+        <section id="mobile-nav">
+            <a href="/"><i data-feather="home"></i><br>Beranda</a>
+            <a href="#about"><i data-feather="info"></i><br>Tentang</a>
+            <a href="#menu"><i data-feather="coffee"></i><br>Menu</a>
+            <a href="#contact"><i data-feather="send"></i><br>Kontak</a>
+            <a href="#support"><i data-feather="dollar-sign"></i><br>Dukung</a>
+        </section>
 
         <!-- Utama -->
         <main>
@@ -63,7 +87,7 @@
 
             <!-- Tentang -->
             <section id="about">
-                <h2><span>Tentang</span> Kami</h2>
+                <h2>// <span>Tentang</span> Kami //</h2>
                 
                 <section class="about-gbr">
                     <figure>
@@ -78,7 +102,7 @@
 
             <!-- Menu -->
             <section id="menu">
-                <h2><span>Menu</span> yang tersedia</h2>
+                <h2>// <span>Menu</span> //</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, est!.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ea.</p>
                 
                 <section>
@@ -134,7 +158,7 @@
 
             <!-- Contact -->
             <section id="contact">
-                <h2><span>Kontak</span> Kami</h2>
+                <h2>// <span>Kontak</span> Kami //</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, deserunt!</p>
 
                 <section class="map-form">
@@ -154,7 +178,7 @@
 
             <!-- Support -->
             <section id="support">
-                <h2><span>Dukung</span> Kami</h2>
+                <h2>// <span>Dukung</span> Kami //</h2>
                 <p>Jangan lupa dukung kami dengan nyawer.</p>
                 <a href="https://saweria.co/putusujane"><img src="images/saweria.png" style="border-radius: 10%;" alt="Saweria" title="Saweria"></a>
             </section>
