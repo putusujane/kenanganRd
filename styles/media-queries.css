@@ -194,8 +194,8 @@
         font-size: large;
     }
 
-    #about, #contact, #support {
-        margin: 0 30px;
+    #about, #menu #contact, #support {
+        margin: 0 20px;
     }
 }
 
@@ -224,6 +224,7 @@
 
     #home h2 {
         font-size: 2.5em;
+        margin-top: 3.6em;
     }
 
     #home p {
