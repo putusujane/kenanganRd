@@ -55,22 +55,22 @@
     }
 
     #mobile-nav {
-        animation: slideKiri 0.2s linear;
-        width: 15rem;
-        height: 100%;
+        animation: slideKiri 0.5s;
+        /* width: 15rem; */
+        /* height: 100%; */
+        transition: 2s;
     }
 
     @keyframes slideKiri {
         from {
             width: 0;
-            height: 0;
-            scale: 0;
+
+            /* height: 0; */
         }
 
         to {
             width: 15rem;
-            height: 100%;
-            scale: 1;
+            /* height: 100%; */
         }
     }
 
@@ -137,8 +137,8 @@
         width: 100%;
     }
 
-    #about, #contact, #support {
-        margin: 0 50px;
+    #about, #menu, #contact, #support {
+        margin: 0 40px;
     }
 }
 
@@ -183,6 +183,10 @@
 
     #home a {
         margin-top: 0;
+    }
+
+    #menu p {
+        text-align: justify;
     }
 
     #about h2, #menu h2, #contact h2, #support h2 {
@@ -237,7 +241,7 @@
 
     #about p, #menu p, #contact p, #support p {
         font-size: medium;
-        text-align: left;
+        text-align: justify;
     }
 
     #support img {
@@ -269,5 +273,10 @@
 
     .copyright p {
         font-size: smaller;
+    }
+
+    footer {
+        border-top-left-radius: 97% 50%;
+        border-top-right-radius: 97% 50%;
     }
 }

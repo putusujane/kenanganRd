@@ -102,9 +102,14 @@ nav a:hover, header section a:hover, .hm:hover {
     transition: 0.5s;
 }
 
+#hamburgerOpen {
+    transition: 0.5s;
+}
+
 /* Hamburger Close */
 #hamburgerClose {
     display: none;
+    transition: 0.5s;
 }
 
 .hm:active {
@@ -118,9 +123,9 @@ nav a:hover, header section a:hover, .hm:hover {
     right: 0;
     width: 15rem;
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(196, 137, 77, 0.9), rgba(1, 1, 1, 0.9));
+    background: linear-gradient(to bottom, rgba(196, 137, 77, 1), rgba(1, 1, 1, 0.9));
     z-index: 999;
-    transition: 1s linear;
+    transition: 0.5s;
 }
 
 #mobile-nav a {
@@ -128,8 +133,10 @@ nav a:hover, header section a:hover, .hm:hover {
     flex-direction: column;
     align-items: center;
 
+    font-weight: bold;
     margin-bottom: 20px;
     color: whitesmoke;
+    transition: 0.2s;
 }
 
 #mobile-nav a::after {
@@ -137,12 +144,12 @@ nav a:hover, header section a:hover, .hm:hover {
     display: block;
     width: 80%;
     margin: 10px 0 20px 0;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
     animation: garisBawah 0.3s normal;
 }
 
 #mobile-nav a:first-child {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 #mobile-nav a:hover {
@@ -151,7 +158,7 @@ nav a:hover, header section a:hover, .hm:hover {
 }
 
 /* Transition */
-#link-title, nav, nav a, #mobile-nav, #mobile-nav a, header section a, #home a, #support img, form input, footer, .socialMedia a, .footer-nav a, .copyright a {
+#link-title, nav, nav a, header section a, #home a, #support img, form input, footer, .socialMedia a, .footer-nav a, .copyright a {
     transition: 0.3s;
 }
 
@@ -362,7 +369,7 @@ form input {
 /* Support Us */
 #support img{
     margin-top: 20px;
-    opacity: 50%;
+    opacity: 60%;
 }
 
 #support img:hover {
