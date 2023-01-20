@@ -1,0 +1,159 @@
+/* Jika layar minimal 1000px */
+@media screen and (min-width: 1000px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+}
+
+/* Jika layar maksimal 1000px */
+@media screen and (max-width: 1000px) {
+
+    /* Header */
+    header {
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+
+    /* Gabungan search-cart dan hamburger */
+    .gbngn {
+        display: flex;
+        gap: 5em;
+    }
+    
+    /* Navigation */
+    nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        animation: slideKiri 0.2s;
+        width: 15rem;
+        height: 100%;
+    }
+
+    @keyframes slideKiri {
+        from {
+            width: 0;
+            height: 0;
+            scale: 0;
+        }
+
+        to {
+            width: 15rem;
+            height: 100%;
+            scale: 1;
+        }
+    }
+
+    /* Font utama diatas background gambar kopi */
+    #home {
+        background-position: right;
+    }
+
+    #home h2  {
+        font-size: 4.5em;
+    }
+
+    #home p, #home a {
+        font-size: 1.2em;
+    }
+
+    #home > * {
+        margin-top: 1.5em;
+    }
+
+    /* About */
+    #about .about-gbr {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .about-gbr img {
+        max-width: 100%;
+    }
+
+    #about h3 {
+        font-size: x-large;
+    }
+
+    #menu p, #contact p, #support p {
+        text-align: center;
+    }
+
+    #menu section {
+        justify-content: center;
+    }
+
+    .map-form {
+        flex-direction: column;
+
+        height: 100%;
+    }
+
+    .map-form iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .map-form form {
+        width: 100%;
+    }
+
+    .map-form form input {
+        margin-bottom: 0;
+    }
+
+    /* Tombol Input kirim pesan */
+    #btn-kirim-ctk {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    header #link-title {
+        font-size: medium;
+    }
+
+    .gbngn {
+        gap: 2em;
+    }
+
+    .search-cart a:first-child {
+        margin-right: 10px;
+    }
+    
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+        background-position: 85%;
+    }
+
+    #home > * {
+        margin: 110px 0 0 0;
+    }
+
+    #home h2 {
+        font-size: 3.5em;
+    }
+
+    #home a {
+        margin-top: 0;
+    }
+
+    #about h2, #menu h2, #contact h2, #support h2 {
+        margin-top: 3em;
+        font-size: 2.2em;
+    }
+
+    #about p, #menu p, #contact p, #support p {
+        font-size: large;
+    }
+}
