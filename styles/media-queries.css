@@ -193,8 +193,17 @@
         text-align: left;
     }
 
+    #support img {
+        max-width: 100%;
+    }
+
     .socialMedia {
         margin-top: 20px;
+    }
+
+    .footer-nav {
+        display: flex;
+        margin-top: 10px;
     }
 
     .dibuat-dengan {
